@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: $base * 2;
+    
     .gallery_image {
         position: relative;
         border-radius: 50%;
@@ -12,25 +13,17 @@
         }
         
         .hover {
-            display: none;
-            
-            .bg{
-                background: transparent;
-                
-            }
-        }
-        &:hover .hover {
-            display: block;
             position: absolute;
             top: 0;
             right: 0;
             bottom: 0;
             left: 0;
             z-index: 3;
-            
-            
-            
-            .bg {
+            visibility: hidden;
+            opacity: 0;
+            transition: all 350ms ease;
+           
+            .bg{
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -44,6 +37,14 @@
                 font-size: $base * 2.5;
                 
             }
+
+
+        }
+
+        &:hover .hover {
+            visibility: visible;
+            opacity: 1;
+            transition: all 350ms ease;
         }
     }
 }

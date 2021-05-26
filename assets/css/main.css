@@ -25,7 +25,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
   margin: 0;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+  font-family: "Gotham Book";
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
@@ -3382,99 +3382,188 @@ template {
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Regular.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Regular.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Regular.ttf") format("truetype");
+  font-family: 'Gotham Light';
+  src: url(../fonts/gotham/GothamLight.ttf);
+  font-weight: lighter;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham Light Italic';
+  src: url(../fonts/gotham/GothamLightItalic.ttf);
+  font-weight: lighter;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url(../fonts/gotham/GothamBook.ttf);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLight.eot");
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-ExtraLight.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-BoldIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-BoldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-BoldIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-BoldIt.ttf") format("truetype");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Bold.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Bold.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Bold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-BlackIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-BlackIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-BlackIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-BlackIt.ttf") format("truetype");
-  font-weight: 900;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-It.eot");
-  src: url("../fonts/source-sans/SourceSansPro-It.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-It.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-It.ttf") format("truetype");
+  font-family: 'Gotham Book Italic';
+  src: url(../fonts/gotham/GothamBookItalic.ttf);
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-SemiboldIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-SemiboldIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-SemiboldIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-SemiboldIt.ttf") format("truetype");
-  font-weight: 600;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLightIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-ExtraLightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-ExtraLightIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-ExtraLightIt.ttf") format("truetype");
-  font-weight: 200;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Light.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Light.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Light.ttf") format("truetype");
-  font-weight: 300;
+  font-family: 'Gotham Medium';
+  src: url(../fonts/gotham/GothamMedium.ttf);
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Semibold.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Semibold.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Semibold.ttf") format("truetype");
-  font-weight: 600;
+  font-family: 'Gotham Bold';
+  src: url(../fonts/gotham/GothamBold.ttf);
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-LightIt.eot");
-  src: url("../fonts/source-sans/SourceSansPro-LightIt.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-LightIt.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-LightIt.ttf") format("truetype");
-  font-weight: 300;
+  font-family: 'Gotham Bold Italic';
+  src: url(../fonts/gotham/GothamBoldItalic.ttf);
+  font-weight: bold;
   font-style: italic;
 }
 
-@font-face {
-  font-family: 'Source Sans Pro';
-  src: url("../fonts/source-sans/SourceSansPro-Black.eot");
-  src: url("../fonts/source-sans/SourceSansPro-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/source-sans/SourceSansPro-Black.woff") format("woff"), url("../fonts/source-sans/SourceSansPro-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
+.gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.gallery .gallery_image {
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.gallery .gallery_image img {
+  width: 100%;
+}
+
+.gallery .gallery_image .hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.gallery .gallery_image .hover .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(circle, rgba(253, 198, 47, 0.9) 0%, rgba(253, 165, 200, 0.9) 75%);
+  width: 100%;
+  height: 100%;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Gotham Book";
+  font-style: italic;
+  font-size: 20px;
+}
+
+.gallery .gallery_image .hover:hover {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.paleta {
+  margin: 16px;
+}
+
+.paleta .colors_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.paleta .colors_flex .color_holder {
+  position: relative;
+}
+
+.paleta .colors_flex .color_holder .color {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.paleta .colors_flex .color_holder .hover {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.paleta .colors_flex .color_holder:hover .hover {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.paleta .colors_flex .color_holder:hover .hover .bg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  color: white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-family: "Gotham Light";
+  font-style: italic;
+  font-size: 12px;
+  border-radius: 50%;
+}
+
+.paleta figcaption {
+  font-size: 12px;
+  font-style: italic;
+  font-family: "Gotham Light";
+  text-align: right;
+  margin-top: 16px;
 }
 
 .swiper-container {
@@ -3485,24 +3574,58 @@ template {
 html,
 body {
   font-size: 16px;
-  font-family: "Source Sans Pro", "Helvetica", Arial, sans_serif;
+  font-family: "Gotham Book";
   line-height: 24px;
   color: #333;
   min-height: 100vh;
 }
 
-.ul_styled, .sidebar .menu_group .menu, .sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu, .tiny .tiny_items {
+h1 {
+  font-family: "Gotham Light";
+  font-size: 40px;
+  margin-bottom: 56px;
+}
+
+h2 {
+  font-family: "Gotham Light";
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-family: "Gotham Book";
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.ul_styled, .sidebar nav .menu_group .menu, .sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu, .tiny .tiny_items {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.ul_italic {
+  text-align: center;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 24px 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  width: 100%;
 }
 
 .layout {
   display: -ms-grid;
   display: grid;
   min-height: 100vh;
-  -ms-grid-columns: 300px calc(100% - 300px - 300px) 300px;
-      grid-template-columns: 300px calc(100% - 300px - 300px) 300px;
+  -ms-grid-columns: 350px calc(100% - 350px - 350px) 350px;
+      grid-template-columns: 350px calc(100% - 350px - 350px) 350px;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
   grid-gap: 0;
@@ -3551,7 +3674,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 16px 32px;
+  padding: 16px 24px;
   background-color: #fdc62f;
 }
 
@@ -3598,15 +3721,26 @@ body {
 
 .sidebar {
   background-color: #fafafa;
-  padding: 48px 0;
   font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: fixed;
+  width: 350px;
 }
 
-.sidebar .menu_group {
+.sidebar nav {
+  padding-top: 32px;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.sidebar nav .menu_group {
   margin-bottom: 24px;
 }
 
-.sidebar .menu_group .menu_tagline {
+.sidebar nav .menu_group .menu_tagline {
   font-size: 14px;
   text-transform: uppercase;
   -webkit-user-select: none;
@@ -3614,30 +3748,32 @@ body {
       -ms-user-select: none;
           user-select: none;
   color: #aaa;
-  padding-left: 16px;
+  padding-left: 24px;
+  font-family: "Gotham Medium";
 }
 
-.sidebar .menu_group .menu .menu_item {
+.sidebar nav .menu_group .menu .menu_item {
   font-weight: 600;
   color: #555;
 }
 
-.sidebar .menu_group .menu .menu_item.opened .menu_item_heading {
+.sidebar nav .menu_group .menu .menu_item.opened .menu_item_heading {
   background-color: #eee;
 }
 
-.sidebar .menu_group .menu .menu_item.opened .menu_item_heading .fa {
+.sidebar nav .menu_group .menu .menu_item.opened .menu_item_heading .fa {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
   -webkit-transition: ease 300ms;
   transition: ease 300ms;
+  color: #555;
 }
 
-.sidebar .menu_group .menu .menu_item.opened .menu_item_submenu {
+.sidebar nav .menu_group .menu .menu_item.opened .menu_item_submenu {
   display: block;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_heading {
+.sidebar nav .menu_group .menu .menu_item .menu_item_heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3647,14 +3783,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px 32px;
+  padding: 12px 24px 12px 40px;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_heading a {
+.sidebar nav .menu_group .menu .menu_item .menu_item_heading a {
   color: inherit;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_heading .fa {
+.sidebar nav .menu_group .menu .menu_item .menu_item_heading .fa {
   color: #aaa;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
@@ -3662,42 +3798,46 @@ body {
   transition: ease 300ms;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_heading:hover, .sidebar .menu_group .menu .menu_item .menu_item_heading.active {
+.sidebar nav .menu_group .menu .menu_item .menu_item_heading:hover, .sidebar nav .menu_group .menu .menu_item .menu_item_heading.active {
   background-color: #eee;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_submenu {
+.sidebar nav .menu_group .menu .menu_item .menu_item_submenu {
   display: none;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu {
+.sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu {
   margin: 0.5rem 0;
   margin-left: 48px;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item {
+.sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item {
   padding: 12px 8px;
   border-left: 3px solid #eee;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item a {
+.sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item a {
   color: inherit;
 }
 
-.sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item:hover, .sidebar .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item.active {
+.sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item:hover, .sidebar nav .menu_group .menu .menu_item .menu_item_submenu .submenu .submenu_item.active {
   border-left: 3px solid black;
 }
 
 .main {
-  padding: 2rem 0;
+  padding: 80px 120px 80px 80px;
 }
 
 .main section {
-  padding: 4rem;
+  margin-bottom: 56px;
 }
 
-.main section p {
-  max-width: 60ch;
+.main section span {
+  font-family: "Gotham Medium";
+}
+
+.main section p, .main section li {
+  margin-bottom: 16px;
 }
 
 .main section.highlighted {
@@ -3720,11 +3860,17 @@ body {
 
 .section_image img {
   width: 100%;
-  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+.section_image figcaption {
+  font-family: "Gotham Light";
+  font-size: 12px;
+  text-align: right;
+  font-style: italic;
 }
 
 .section_gallery {
@@ -3766,7 +3912,7 @@ body {
 }
 
 .tiny {
-  padding: 48px 0;
+  padding: 72px 0;
 }
 
 .tiny .tiny_heading {
