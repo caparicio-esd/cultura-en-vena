@@ -72,9 +72,7 @@ h6 {}
     margin: $base* 3 0;
 }
 
-p {
-    margin: 0;
-}
+
 
 a {
     width: 100%;
@@ -163,6 +161,10 @@ a {
     position: fixed;
     width: 350px;
     height: calc(100% - 64px);
+
+    p{
+        margin: 0;
+    }
 
 
     nav {
@@ -265,30 +267,16 @@ a {
     padding: $base * 10 $base * 15 $base * 10 $base * 10;
 
     section {
-        margin-bottom: $base * 7;
+        margin-top: $base * 7 ;
 
         span {
             font-family: "Gotham Medium";
         }
 
-        p,
+       
         li {
 
             margin-bottom: $base * 2;
-        }
-
-        &.highlighted {
-            background-color: tomato;
-            color: white;
-        }
-
-        &.light {
-            background-color: #eee;
-        }
-
-        &.dark {
-            background-color: #444;
-            color: white;
         }
     }
 }
@@ -423,6 +411,7 @@ a {
             letter-spacing: 3px;
             font-size: 12px;
             text-transform: uppercase;
+            margin: 0;
 
 
         }
