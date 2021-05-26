@@ -338,6 +338,12 @@ a {
 .tiny {
 
     padding: $base * 9 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: auto;
+    max-width: 350px;
+    width: auto;
 
     .tiny_heading {
         text-transform: uppercase;

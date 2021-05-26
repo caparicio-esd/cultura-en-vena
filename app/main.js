@@ -7,7 +7,16 @@ import {Howl, Howler} from 'howler';
 window.addEventListener('load', () => {
     initEventsInSidebar();
     initAllSwiper();
+    secondaryNavScrollEvents();
+    initSecondaryNav();
 })
+
+window.addEventListener("scroll", () => {
+    secondaryNavScrollEvents();
+})
+
+let terms = [];
+
 
 const initEventsInSidebar = () => {
 
@@ -56,4 +65,52 @@ const initAllSwiper = () => {
             
         });
     })
+}
+
+
+const initSecondaryNav = () => {
+    const h2s = document.querySelectorAll('h2');
+    h2s.forEach((h2, i) => {
+        terms.push({
+            id: i,
+            text: h2.innerText, 
+            scrollPoint: h2.offsetTop
+        })
+    })
+    renderSecondaryNav(terms)
+    secondaryNavEvents(terms)
+};
+
+const renderSecondaryNav = (terms) => {
+    let htmlString = "";
+    const tiny = document.querySelector('.tiny_items');
+    terms.forEach(term => {
+        htmlString += `
+            <div class="tiny_item" data-id="${term.id}">${term.text}</div>
+        `;
+    })
+    tiny.innerHTML = htmlString;
+}
+
+const secondaryNavEvents = (terms) => {
+    const termsList = document.querySelectorAll(".tiny_items .tiny_item");
+    termsList.forEach(termListItem => {
+        termListItem.addEventListener("click", () => {
+            const id = +termListItem.dataset.id;
+            const scrollPoint = terms[id].scrollPoint - 30;
+            scrollTo(0, scrollPoint);
+        })
+    })
+};
+
+const secondaryNavScrollEvents = () => {
+    const isIn = terms.map(term => (term.scrollPoint - innerHeight/2) < scrollY);
+    const lastIn = isIn.lastIndexOf(true);
+    const h2s = document.querySelectorAll('h2');
+    const tiny = document.querySelectorAll('.tiny_items .tiny_item');
+
+    tiny.forEach(tinyItem => {
+        tinyItem.classList.remove("active")
+    });
+    if (tiny[lastIn]) tiny[lastIn].classList.add("active")    
 }
