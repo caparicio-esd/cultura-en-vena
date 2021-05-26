@@ -30,44 +30,39 @@ body {
     min-height: 100vh;
 }
 
-h1{
+h1 {
     font-family: "Gotham Light";
     font-size: $base * 5;
     margin-bottom: $base*7;
 }
 
-h2{
+h2 {
     font-family: "Gotham Light";
     font-size: $base * 3;
     margin-bottom: $base * 2;
 
 }
 
-h3{
+h3 {
     font-family: "Gotham Book";
     font-size: $base * 2;
     margin-bottom: $base;
-    
-}
-
-h4{
 
 }
 
-h5{
+h4 {}
 
-}
+h5 {}
 
-h6{
+h6 {}
 
-}
 .ul_styled {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.ul_italic{
+.ul_italic {
     text-align: center;
     font-style: italic;
     font-size: $base* 3;
@@ -75,11 +70,11 @@ h6{
     margin: $base* 3 0;
 }
 
-p{
+p {
     margin: 0;
 }
 
-a{
+a {
     width: 100%;
 }
 
@@ -96,15 +91,19 @@ a{
     .header {
         grid-area: 1 / 1 / span 1 / -1;
     }
+
     .sidebar {
         grid-area: 2 / 1 / span 2 / span 1;
     }
+
     .main {
         grid-area: 2 / 2 / span 1 / span 1;
     }
+
     .tiny {
         grid-area: 2 / 3 / span 1 / span 1;
     }
+
     .footer {
         grid-area: 3 / 2 / span 1 / -1;
     }
@@ -113,7 +112,7 @@ a{
 .header {
     display: flex;
     justify-content: center;
-    padding: $base * 2 $base * 3 ;
+    padding: $base * 2 $base * 3;
     background-color: $corporateColorCeV;
 
     .header_holder {
@@ -121,13 +120,16 @@ a{
         display: flex;
         justify-content: space-between;
         align-items: center;
+
         .header_brand {
             img {
                 width: 100px;
             }
         }
+
         .social {
             display: flex;
+
             .instagram,
             .facebook,
             .twitter {
@@ -153,82 +155,94 @@ a{
     user-select: none;
     position: fixed;
     width: 350px;
-    
-  
-    
-    nav{
+    height: calc(100% - 64px);
+
+
+    nav {
         padding-top: $base* 4;
         overflow-y: scroll;
-        height: 100vh;
-        .menu_group {
-        margin-bottom: $base * 3;
-        .menu_tagline {
-            font-size: 14px;
-            text-transform: uppercase;
-            user-select: none;
-            color: #aaa;
-            padding-left: $base * 3;
-            font-family: "Gotham Medium"
-        }
-        .menu {
-            @extend .ul_styled;
+        height: 100%;
 
-            .menu_item {
-                font-weight: 600;
-                color: #555;
-               
-                &.opened {
+        .menu_group {
+            margin-bottom: $base * 3;
+
+            .menu_tagline {
+                font-size: 14px;
+                text-transform: uppercase;
+                user-select: none;
+                color: #aaa;
+                padding-left: $base * 3;
+                font-family: "Gotham Medium"
+            }
+
+            .menu {
+                @extend .ul_styled;
+
+                .menu_item {
+                    font-weight: 600;
+                    color: #555;
+
+                    &.opened {
+                        .menu_item_heading {
+                            background-color: #eee;
+
+                            .fa {
+                                transform: rotate(0deg);
+                                transition: ease 300ms;
+                                color: #555;
+                            }
+                        }
+
+                        .menu_item_submenu {
+                            display: block;
+                        }
+                    }
+
                     .menu_item_heading {
-                        background-color: #eee;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: $base * 1.5 $base * 3 $base * 1.5 $base * 5;
+
+                        a {
+                            color: inherit;
+                        }
+
                         .fa {
-                            transform: rotate(0deg);
+                            color: #aaa;
+                            transform: rotate(-90deg);
                             transition: ease 300ms;
-                            color: #555;
+                        }
+
+                        &:hover,
+                        &.active {
+                            background-color: #eee;
                         }
                     }
 
                     .menu_item_submenu {
-                        display: block;
-                    }
-                }
+                        display: none;
 
-                .menu_item_heading {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: $base * 1.5 $base * 3 $base * 1.5 $base * 5;
-                    a {
-                        color: inherit;
-                    }
-                    .fa {
-                        color: #aaa;
-                        transform: rotate(-90deg);
-                        transition: ease 300ms;
-                    }
-                    &:hover,
-                    &.active {
-                        background-color: #eee;
-                    }
-                }
+                        .submenu {
+                            margin: 0.5rem 0;
+                            margin-left: $base * 6;
 
-                .menu_item_submenu {
-                    display: none;
-                    .submenu {
-                        margin: 0.5rem 0;
-                        margin-left: $base * 6;
-                        
 
-                        @extend .ul_styled;
-                        .submenu_item {
-                            padding: $base * 1.5 $base;
-                            border-left: 3px solid #eee;
-                            a {
-                                color: inherit;
-                                display: block;
-                            }
-                            &:hover,
-                            &.active {
-                                border-left: 3px solid black;
+                            @extend .ul_styled;
+
+                            .submenu_item {
+                                padding: $base * 1.5 $base;
+                                border-left: 3px solid #eee;
+
+                                a {
+                                    color: inherit;
+                                    display: block;
+                                }
+
+                                &:hover,
+                                &.active {
+                                    border-left: 3px solid black;
+                                }
                             }
                         }
                     }
@@ -236,21 +250,23 @@ a{
             }
         }
     }
-    }
 
-    
+
 }
 
 .main {
-    padding: $base * 10 $base * 15 $base * 10  $base * 10; 
+    padding: $base * 10 $base * 15 $base * 10 $base * 10;
+
     section {
         margin-bottom: $base * 7;
 
-        span{
+        span {
             font-family: "Gotham Medium";
         }
-        p, li {
-            
+
+        p,
+        li {
+
             margin-bottom: $base * 2;
         }
 
@@ -258,9 +274,11 @@ a{
             background-color: tomato;
             color: white;
         }
+
         &.light {
             background-color: #eee;
         }
+
         &.dark {
             background-color: #444;
             color: white;
@@ -270,13 +288,15 @@ a{
 
 .section_image {
     margin: 2rem 0;
+
     img {
         width: 100%;
-        
+
         object-fit: cover;
         object-position: center;
     }
-    figcaption{
+
+    figcaption {
         font-family: "Gotham Light";
         font-size: 12px;
         text-align: right;
@@ -300,6 +320,7 @@ a{
     &_3 {
         grid-template-columns: repeat(3, 1fr);
     }
+
     &_2 {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -315,12 +336,14 @@ a{
 }
 
 .tiny {
-   
+
     padding: $base * 9 0;
+
     .tiny_heading {
         text-transform: uppercase;
         color: #aaa;
     }
+
     .tiny_items {
         @extend .ul_styled;
 
@@ -335,6 +358,7 @@ a{
                 border-left: 2px solid black;
                 color: black;
             }
+
             a {
                 color: inherit;
                 user-select: none;
@@ -348,8 +372,3 @@ a{
     padding: $base * 3;
     border-top: solid 1px #aaa;
 }
-
-
-
-
-
