@@ -101,7 +101,7 @@ a {
     }
 
     .full_screen{
-        grid-area: 2 / 2 / -1 / -1;
+        grid-area: 2 / 2 / span 1 / -1;
 
     }
 
@@ -340,6 +340,10 @@ a {
     .section_video{
     margin: $base * 4;
 }
+}
+
+.section_video{
+    margin: $base * 4 0 0 0;
 }
 
 
