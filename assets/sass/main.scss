@@ -34,7 +34,8 @@ body {
 h1 {
     font-family: "Gotham Light";
     font-size: $base * 5;
-    margin-bottom: $base*7;
+    margin-bottom: $base * 7;
+    line-height: $base * 7;
 }
 
 h2 {
@@ -297,7 +298,6 @@ a {
 
     img {
         width: 100%;
-
         object-fit: cover;
         object-position: center;
     }
@@ -307,6 +307,22 @@ a {
         font-size: 12px;
         text-align: right;
         font-style: italic;
+    }
+}
+
+.boxes{
+    border: solid 1px #fdc62f;
+}
+
+.big{
+    position: relative;
+
+    .little{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
     }
 }
 
@@ -332,10 +348,12 @@ a {
     }
 }
 
-
-.section_video{
-    margin: $base * 4 $base * 4;
+.full_screen{
+    .section_video{
+    margin: $base * 4;
 }
+}
+
 
 .section_youtube,
 .section_figma {
