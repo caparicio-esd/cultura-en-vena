@@ -7,8 +7,7 @@
 @import "partials/gallery";
 @import "partials/color";
 
-$corporateColor: tomato;
-$corporateColorCeV: #fdc62f;
+
 
 
 
@@ -347,13 +346,18 @@ a {
 }
 
 
-.section_youtube,
-.section_figma {
-    margin: 2rem 0;
-
-    iframe {
-        width: 100% !important;
+.image_flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        width: 50%;
+        &:first-child{
+            margin-right: $base;
+        }
     }
+
+    
 }
 
 .tiny {
