@@ -9,16 +9,20 @@ window.addEventListener('load', () => {
 })
 
 const initEventsInSidebar = () => {
+
     const sideItems = document.querySelectorAll('.menu_item');
-    sideItems.forEach(i => {
-        i.addEventListener('click', (ev) => {
-            sideItems.forEach(i_ => {
-                if (!ev.composedPath().includes(i)) {
-                    i_.classList.remove('opened');
+    
+    sideItems.forEach(sideItem => {
+        sideItem.addEventListener('click', (ev) => {
+        
+            // close all
+            sideItems.forEach(sideItem_ => {
+                if (!ev.composedPath().includes(sideItem)) {
+                    sideItem_.classList.remove('opened');
                 }
             })
-            if (i.querySelector('.submenu')) {
-                i.classList.toggle('opened');
+            if (sideItem.querySelector('.submenu')) {
+                sideItem.classList.toggle('opened');
             }
         })
     })

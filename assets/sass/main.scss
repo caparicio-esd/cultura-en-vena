@@ -221,10 +221,10 @@ a{
                         @extend .ul_styled;
                         .submenu_item {
                             padding: $base * 1.5 $base;
-                            
                             border-left: 3px solid #eee;
                             a {
                                 color: inherit;
+                                display: block;
                             }
                             &:hover,
                             &.active {
