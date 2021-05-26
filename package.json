@@ -12,6 +12,7 @@
     "vite": "^2.2.3"
   },
   "dependencies": {
+    "howler": "^2.2.1",
     "swiper": "^6.6.2"
   }
 }
