@@ -1,8 +1,6 @@
 import '../assets/sass/main.scss'
 import Swiper from 'swiper/bundle';
 import 'swiper/swiper-bundle.css';
-import {Howl, Howler} from 'howler';
-import '../app/music_howler'
 
 
 window.addEventListener('load', () => {
